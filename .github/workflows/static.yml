@@ -1,10 +1,13 @@
-# .github/workflows/static.yml
 name: Build Hugo Site to public/
 
 on:
   push:
     branches:
       - main
+
+# 👇 これが必要！
+permissions:
+  contents: write
 
 jobs:
   build:
